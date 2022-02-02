@@ -8,6 +8,7 @@ const routes = express();
 routes.post('/usuarios', users.cadastrarUsuario);
 
 
-routes.get('/login', login.testeLogin);
+// login
+routes.post('/login', login.login);
 
 module.exports = routes;
