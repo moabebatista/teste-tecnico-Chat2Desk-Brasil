@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/moabebatista/teste-tecnico-Chat2Desk-Brasil#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.2",
+    "knex": "^1.0.2",
+    "pg": "^8.7.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

@@ -4,7 +4,10 @@ const login = require('./controllers/login');
 
 const routes = express();
 
-routes.get('/usuarios', users.testeUsers);
+// cadastro de novo usuario
+routes.post('/usuarios', users.cadastrarUsuario);
+
+
 routes.get('/login', login.testeLogin);
 
 module.exports = routes;

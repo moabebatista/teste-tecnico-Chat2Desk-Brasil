@@ -1,0 +1,13 @@
+-- CREATE THE USER TABLE
+CREATE DATABASE cadastro_de_usuarios;
+
+-- DELETE TABLE
+DROP TABLE IF EXISTS usuarios;
+
+-- CREATE TABLE
+CREATE TABLE usuarios (
+	id SERIAL PRIMARY KEY,
+  	nome TEXT NOT NULL,
+  	email TEXT NOT NULL UNIQUE,
+  	senha TEXT NOT NULL
+);
