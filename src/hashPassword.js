@@ -1,1 +1,1 @@
-module.exports = 'testeNodeJsChat2DescBrsil';
+module.exports = 'testeNodeJsChat2DescBrasil';

@@ -7,7 +7,6 @@ const routes = express();
 // cadastro de novo usuario
 routes.post('/usuarios', users.cadastrarUsuario);
 
-
 // login
 routes.post('/login', login.login);
 

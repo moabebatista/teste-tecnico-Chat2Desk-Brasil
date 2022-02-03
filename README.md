@@ -18,3 +18,56 @@
     - Validação dos campos;
     - Tratamento de erros (que podem ser simulados para efeito de teste);
     - Estratégias de segurança serão bem vistas;
+
+## **O que foi desenvolvido:**
+
+#### Executar o Projeto:
+
+1. `npm install` `-->` `Instala as dependêcias`
+2. `npm run dev` `-->` `executar o projeto com nodemon`
+
+## **Endpoints**
+
+### **Cadastrar usuário**
+
+#### `POST` `/usuario`
+
+Essa é a rota que será utilizada para cadastrar um novo usuario no sistema.
+
+-   **Requisição**  
+    Sem parâmetros de rota ou de query.  
+    O corpo (body) deverá possuir um objeto com as seguintes propriedades (respeitando estes nomes):
+    -   nome
+    -   email
+    -   senha
+
+#### **Exemplo de requisição**
+```javascript
+// POST /usuario
+{
+    "nome": "José",
+    "email": "jose@email.com.br",
+    "senha": "j1234"
+}
+```
+
+### **Login do usuário**
+
+#### `POST` `/login`
+
+Essa é a rota que permite o usuario cadastrado realizar o login no sistema.
+
+-   **Requisição**  
+    Sem parâmetros de rota ou de query.  
+    O corpo (body) deverá possuir um objeto com as seguintes propriedades (respeitando estes nomes):  
+    -   email
+    -   senha 
+   
+#### **Exemplo de requisição**
+```javascript
+// POST /login
+{
+    "email": "jose@email.com.br",
+    "senha": "j1234"
+}
+```
